@@ -1,0 +1,38 @@
+// Create an auction item
+POST {{host}}:{{port}}/auctionitem
+Content-Type: application/json
+
+{
+  "description": "Example description for my auction item",
+  "startingBid": 10.0
+}
+
+> {%
+client.test(
+    "Test that we can create a new auction item",
+    function() {
+        client.assert(response.status === 201, "Response status is not 201");
+        client.assert(response.body.success, "Response does not have success: true");
+        client.assert(response.body.id, "Response has no id field");
+
+        // Save the item id so that we can use it for subsequent requests
+        client.global.set("item_id", response.body.id);
+    }
+);
+%}
+
+###
+// Retrieve the auction item we created
+GET {{host}}:{{port}}/auctionitem/{{item_id}}
+
+> {%
+client.test(
+    "Test that we can retrieve the auction item created in the first request",
+    function() {
+        client.assert(response.status === 200, "Response status is not 200");
+        client.assert(response.body.id, "Response has no id field");
+        client.assert(response.body.startingBid == 10.0, "startingBid is incorrect");
+        client.assert(response.body.description == "Example description for my auction item", "description is incorrect");
+    }
+);
+%}

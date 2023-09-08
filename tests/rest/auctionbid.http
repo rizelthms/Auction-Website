@@ -1,0 +1,70 @@
+// Setup: Create an auction item we can make a bid for
+POST {{host}}:{{port}}/auctionitem
+Content-Type: application/json
+
+{
+  "description": "Example description for my auction item",
+  "startingBid": 10.0
+}
+
+> {% client.global.set("item_id", response.body.id); %}
+
+
+###
+// Make a bid for the auction we created
+POST http://localhost:3000/auctionbid
+Content-Type: application/json
+
+    {
+    "itemId": "81ac87d0-868e-4029-8a7f-b81c57a940fa",
+    "bidAmount": 101.0
+    }
+
+###
+// Get the details of the bid we made
+GET http://localhost:3000/auctionbid/bid/44becb36-a55e-4ea3-9937-1df5bc1de20b/
+
+> {%
+client.test(
+    "Test that we can get the details of the bid we made",
+    function() {
+        client.assert(response.status === 200, "Response status is not 200");
+        client.assert(response.body.id, "Response has no id field");
+        client.assert(response.body.bidAmount == 20.0, "Response bidAmount is wrong");
+    }
+);
+%}
+
+###
+// Make a second bid for testing purposes
+POST {{host}}:{{port}}/auctionbid/{{item_id}}/30
+
+###
+// Get all the bids we made
+GET http://localhost:3000/auctionbid/item/335f4840-14e8-468a-86ff-58818706a743
+
+> {%
+client.test(
+    "Test that we can get all bids for an item",
+    function() {
+        client.assert(response.status === 200, "Response status is not 200");
+        client.assert(response.body.length == 2, "Did not find 2 bids");
+        client.assert(response.body[0].bidAmount == 20, "First bidAmount is wrong");
+        client.assert(response.body[1].bidAmount == 30, "Second bidAmount is wrong");
+    }
+);
+%}
+
+###
+// Test that bids below the current bid are rejected
+POST {{host}}:{{port}}/auctionbid/{{item_id}}/5
+
+> {%
+client.test(
+    "Test that bids below the current bid are rejected",
+    function() {
+        client.assert(response.status === 400, "Response status is not 400");
+        client.assert(!response.body.success, "Response does not have success: false");
+    }
+);
+%}

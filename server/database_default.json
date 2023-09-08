@@ -1,0 +1,223 @@
+{
+    "admin": [
+        {
+            "id": "ca71a13b-cf94-4332-8814-90c62b3a052b",
+            "name": "admin",
+            "passwordHash": "$2b$10$23/c/pK4Klp3H14d8ArKceouRY.Ku4GtE9s7FM.f6LO..rr3zEqZW",
+            "isAdmin": true
+        }
+    ],
+    "user": [
+        {
+            "id": "7e07a710-9bc9-4a26-99e2-0e01d68c5113",
+            "name": "user",
+            "passwordHash": "$2b$10$RhTYpm.ZGp0O62ENiGLg3Ocs.CiJWojCzmgqnRP6YB3RUBgMe422m",
+            "isAdmin": false
+        }
+    ],
+    "item": [
+        {
+            "id": "376fa177-acdb-4d9d-b47c-e68d9289e1eb",
+            "description": "Sister in the Garb",
+            "year": "1551",
+            "author": "Sofonisba",
+            "type": "Oil",
+            "createdAt": "2022-10-16T10:05:56.639Z",
+            "startingBid": 10,
+            "currentBid": 11,
+            "endAt": "2023-10-31"
+        },
+        {
+            "id": "32176716-e68a-429a-8174-b7056f6b61a7",
+            "description": "Prince Alessandro",
+            "year": "1560",
+            "author": "Sofonisba",
+            "type": "Watercolor",
+            "createdAt": "2022-10-30T13:32:03.451Z",
+            "startingBid": 11,
+            "currentBid": 12,
+            "endAt": "2023-01-01"
+        },
+        {
+            "id": "54d8bf3b-9694-474a-a35d-14b9d58c9cd3",
+            "description": "Portrait of Queen",
+            "year": "1599",
+            "author": "Sofonisba",
+            "type": "Digital",
+            "createdAt": "2022-11-16T03:43:23.670Z",
+            "startingBid": 99,
+            "currentBid": null,
+            "endAt": "2024-02-01"
+        },
+        {
+            "id": "5e03c5f5-1185-4d0a-b184-86d62e585cf9",
+            "description": "Aurora",
+            "year": "1625",
+            "author": "Artemisia",
+            "type": "Oil",
+            "createdAt": "2022-11-14T05:43:23.670Z",
+            "startingBid": 99,
+            "currentBid": null,
+            "endAt": "2024-02-10"
+        },
+        {
+            "id": "437555c6-f6d4-42e5-8998-bd29a1147730",
+            "description": "Lucretia",
+            "year": "1645",
+            "author": "Artemisia",
+            "type": "Acrylic",
+            "createdAt": "2022-11-14T05:43:23.670Z",
+            "startingBid": 135,
+            "currentBid": null,
+            "endAt": "2024-02-10"
+        },
+        {
+            "id": "e8e19d3d-f663-44f7-8bdf-c603bdb762bf",
+            "description": "Venus & Cupid",
+            "year": "1625",
+            "author": "Artemisia",
+            "type": "Watercolor",
+            "createdAt": "2022-11-14T05:43:23.670Z",
+            "startingBid": 105,
+            "currentBid": null,
+            "endAt": "2024-02-10"
+        },
+        {
+            "id": "be8b23d0-7107-4726-8b40-4b50b7439b18",
+            "description": "The Serenade",
+            "year": "1628",
+            "author": "Judith",
+            "type": "Acrylic",
+            "createdAt": "2022-11-14T05:43:23.670Z",
+            "startingBid": 185,
+            "currentBid": null,
+            "endAt": "2024-03-10"
+        },
+        {
+            "id": "692f2a1b-a752-4ac2-8265-2922519236c5",
+            "description": "The Last Drop",
+            "year": "1629",
+            "author": "Judith",
+            "type": "Pastel",
+            "createdAt": "2022-11-14T05:43:23.670Z",
+            "startingBid": 205,
+            "currentBid": null,
+            "endAt": "2024-03-10"
+        },
+        {
+            "id": "930307ec-7fee-4187-aa33-dceb30e2f321",
+            "description": "Merry Trio",
+            "year": "1629",
+            "author": "Judith",
+            "type": "Digital",
+            "createdAt": "2022-11-14T05:43:23.670Z",
+            "startingBid": 225,
+            "currentBid": null,
+            "endAt": "2024-03-10"
+        },
+        {
+            "id": "fededcbf-916d-4579-b8a8-c76a22b10505",
+            "description": "Fruit of Life",
+            "year": "1953",
+            "author": "Kahlo",
+            "type": "Oil",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 65,
+            "currentBid": null,
+            "endAt": "2024-03-12"
+        },
+        {
+            "id": "e788ad5e-9ec3-4ed7-b8e7-c78a6293954f",
+            "description": "Coconuts",
+            "year": "1951",
+            "author": "Kahlo",
+            "type": "Pastel",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 77,
+            "currentBid": null,
+            "endAt": "2024-03-12"
+        },
+        {
+            "id": "1665668d-fe34-4d1e-b68a-2965b6fe06fc",
+            "description": "Living Nature",
+            "year": "1952",
+            "author": "Kahlo",
+            "type": "Watercolor",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 23,
+            "currentBid": null,
+            "endAt": "2024-03-12"
+        },
+        {
+            "id": "e2037b0b-d532-44e7-8c2f-7416c72fddc0",
+            "description": "Blue Field",
+            "year": "1997",
+            "author": "Mehretu",
+            "type": "Acrylic",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 230,
+            "currentBid": null,
+            "endAt": "2024-03-17"
+        },
+        {
+            "id": "cdb311b0-4762-4fd6-a387-5546bda0a21f",
+            "description": "Local Calm",
+            "year": "2005",
+            "author": "Mehretu",
+            "type": "Oil",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 230,
+            "currentBid": null,
+            "endAt": "2024-03-17"
+        },
+        {
+            "id": "4424ac83-15ce-4287-b229-d11688e74763",
+            "description": "Invisible Sun",
+            "year": "2014",
+            "author": "Mehretu",
+            "type": "Digital",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 230,
+            "currentBid": null,
+            "endAt": "2024-03-17"
+        },
+        {
+            "id": "c59f1c93-712a-445c-bc6c-38e47a0adae5",
+            "description": "Haka and Riot",
+            "year": "2019",
+            "author": "Mehretu",
+            "type": "Pastel",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 90,
+            "currentBid": null,
+            "endAt": "2024-03-17"
+        },
+        {
+            "id": "b0fcf2b2-17e1-4738-85e2-7655e9e78c7c",
+            "description": "Untitled",
+            "year": "2011",
+            "author": "Mehretu",
+            "type": "Watercolor",
+            "createdAt": "2022-11-14T08:43:23.670Z",
+            "startingBid": 180,
+            "currentBid": null,
+            "endAt": "2024-03-17"
+        }
+    ],
+    "bids": [
+        {
+            "id": "f23be25a-93f1-4c4c-a419-6bcf5b2ba350",
+            "itemId": "376fa177-acdb-4d9d-b47c-e68d9289e1eb",
+            "bidAmount": 11,
+            "createdAt": "2022-10-30T10:17:30.858Z",
+            "bidBy": "user"
+        },
+        {
+            "id": "1f1906f7-ec91-4666-b07b-6f64a73be7b7",
+            "itemId": "32176716-e68a-429a-8174-b7056f6b61a7",
+            "bidAmount": 12,
+            "createdAt": "2022-10-30T13:32:43.158Z",
+            "bidBy": "user"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+@baseUrl=http://localhost:3000
+POST http://localhost:3000/auctionitem
+Content-Type: application/json
+
+{
+  "description": "New Item",
+  "startingBid":"10"
+}
+
+###
+GET http://localhost:3000/auctionitem/335f4840-14e8-468a-86ff-58818706a743
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/auctionitem/a8e5dc3a-85da-4880-a010-a13533ad3355
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImM0ODEyZjE1LTc2ZmItNDkwYS1iMjZmLTAyMmUzNjg1MmI4YSIsIm5hbWUiOiJhZG1pbiIsInBhc3N3b3JkSGFzaCI6IiQyYiQxMCRBZGlDRDRCaWRSUzBnay5zUlB3YmQuREFsalR1MXFFTUdFdnViUTBobk90ekFHdncxdER4TyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY2NTY4NDAyMn0._I1YLG6hFwKtfZ3W7c3vo0r_aSATOiwFMWRa-uUb9oU

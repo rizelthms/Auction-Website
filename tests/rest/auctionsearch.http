@@ -1,0 +1,42 @@
+// Create auction item 1
+POST {{host}}:{{port}}/auctionitem
+Content-Type: application/json
+
+{
+  "description": "Item 1 description",
+  "startingBid": 10.0
+}
+
+###
+// Create auction item 2
+POST {{host}}:{{port}}/auctionitem
+Content-Type: application/json
+
+{
+  "description": "Item 2 description",
+  "startingBid": 11.0
+}
+
+###
+// Create auction item 3
+POST {{host}}:{{port}}/auctionitem
+Content-Type: application/json
+
+{
+  "description": "Item 3 description",
+  "startingBid": 12.0
+}
+
+###
+// Search for auctions
+GET {{host}}:{{port}}/auctionsearch
+
+> {%
+client.test(
+    "Test that we can search for all auctions",
+    function() {
+        client.assert(response.status === 200, "Response status is not 200");
+        client.assert(response.body.length == 3, "Response does not have a length of 3");
+    }
+);
+%}
