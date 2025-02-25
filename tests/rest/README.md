@@ -25,54 +25,6 @@ This project is an auction website where users can bid on various items. The web
 - **Password Hashing:** bcrypt  
 - **Authentication:** JWT (JSON Web Tokens)  
 
-## Project Structure
-```
-client/
-├── index.html
-├── jsconfig.json
-├── package.json
-├── postcss.config.cjs
-├── public/
-├── src/
-│   ├── apiclient.js
-│   ├── App.svelte
-│   ├── assets/
-│   ├── components/
-│   ├── lib/
-│   ├── main.css
-│   ├── main.js
-│   ├── pages/
-│   └── vite-env.d.ts
-├── tailwind.config.cjs
-└── vite.config.js
-
-documentation/
-└── users.md
-
-server/
-├── database_default.json
-├── database.json
-├── nodemon.json
-├── package.json
-├── src/
-│   ├── databaseapi.js
-│   ├── index.js
-│   ├── middleware/
-│   ├── models/
-│   ├── response.handler.js
-│   ├── routes/
-│   └── utils.js
-
-tests/
-└── rest/
-    ├── auctionbid.http
-    ├── auctionitem.http
-    ├── auctionsearch.http
-    ├── hello.http
-    ├── login.http
-    └── auth.http
-```
-
 ## Getting Started
 
 ### Prerequisites
@@ -106,7 +58,7 @@ tests/
    ```
 
 ### Usage
-- Open your browser and navigate to `http://localhost:3001` to access the client-side application.
+- Open your browser and navigate to local host to access the client-side application.
 - Use the provided endpoints to interact with the server-side application.
 
 ## Users
