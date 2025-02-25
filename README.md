@@ -69,5 +69,3 @@ Place the credentials for at least two users in the table below. There should be
 | `admin`  | admin123 | admin |
 | `user`   | user123 | user |
 
-## License
-This project is licensed under the MIT License.
